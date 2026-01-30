@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/nhosoya/rbs_rails.git
+  revision: 0d1473c4527694e30665a333a6f98eac6932a0a1
+  branch: fix/return-super-result-from-enum
+  specs:
+    rbs_rails (0.13.0)
+      parser
+      prism
+      rbs (>= 1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -197,10 +207,6 @@ GEM
     rake (13.3.1)
     rbs (3.10.2)
       logger
-    rbs_rails (0.13.0)
-      parser
-      prism
-      rbs (>= 1)
     rdoc (7.1.0)
       erb
       psych (>= 4.0.0)
@@ -248,7 +254,7 @@ DEPENDENCIES
   propshaft
   puma (>= 5.0)
   rails (~> 8.1.2)
-  rbs_rails
+  rbs_rails!
   sqlite3 (>= 2.1)
   stateful_enum
   tzinfo-data
@@ -320,7 +326,7 @@ CHECKSUMS
   railties (8.1.2) sha256=1289ece76b4f7668fc46d07e55cc992b5b8751f2ad85548b7da351b8c59f8055
   rake (13.3.1) sha256=8c9e89d09f66a26a01264e7e3480ec0607f0c497a861ef16063604b1b08eb19c
   rbs (3.10.2) sha256=bd8a5dc4c62f229f020146b61844a31f9c79e649449d212904a474eb79c846fc
-  rbs_rails (0.13.0) sha256=f08a1d262295849bf07b5e89693631af14b1a51177fbea0a24f5eab05f5781ee
+  rbs_rails (0.13.0)
   rdoc (7.1.0) sha256=494899df0706c178596ca6e1d50f1b7eb285a9b2aae715be5abd742734f17363
   reline (0.6.3) sha256=1198b04973565b36ec0f11542ab3f5cfeeec34823f4e54cebde90968092b1835
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1

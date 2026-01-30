@@ -16,6 +16,6 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'
 
-  gem 'rbs_rails'
+  gem 'rbs_rails', github: 'nhosoya/rbs_rails', branch: 'fix/return-super-result-from-enum'
   gem 'stateful_enum'
 end
