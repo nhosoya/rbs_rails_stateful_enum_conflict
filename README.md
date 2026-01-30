@@ -18,6 +18,29 @@ Error: undefined method 'to_sym' for an instance of Array
 - rbs_rails 0.13.0
 - stateful_enum 0.9.0
 
+## Model
+
+This app has an `Order` model using `stateful_enum`'s block syntax:
+
+```ruby
+# app/models/order.rb
+class Order < ApplicationRecord
+  enum :status, { pending: 0, confirmed: 1, shipped: 2, delivered: 3 } do
+    event :confirm do
+      transition pending: :confirmed
+    end
+
+    event :ship do
+      transition confirmed: :shipped
+    end
+
+    event :deliver do
+      transition shipped: :delivered
+    end
+  end
+end
+```
+
 ## Steps to reproduce
 
 ```bash
