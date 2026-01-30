@@ -2,6 +2,8 @@
 
 Minimal reproduction for the conflict between `rbs_rails` and `stateful_enum` gems.
 
+**Issue:** https://github.com/pocke/rbs_rails/issues/365
+
 ## Problem
 
 When using `stateful_enum`'s block syntax with `rbs_rails`, running `bundle exec rbs_rails models` fails:
